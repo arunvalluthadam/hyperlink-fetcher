@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-	<h3>Showing Hyperlinks</h3>
-	<h3>------------------------------</h3>
-	{% for link in hyperlinks %}
-		<p>----------------------------------------------------------------------</p>
-		<h3><p>{{ link.address }}</p></h3>
-		<p><h4>{{ link }}</h4></p>
-	{% endfor %}
-	<a class="btn" href="/home/">Home</a>
+	<div style="position:absolute;left:30px">
+		<a class="btn" href="/home/" style="position:absolute;left:700px;top:50px;">Home</a>
+		<h3>Hyperlinks</h3>
+		<h3>------------------------------</h3>
+		{% for link in hyperlinks %}
+			<p>----------------------------------------------------------------------</p>
+			<p><h4>{{ link }}</h4></p>
+		{% endfor %}
+		<a class="btn btn-primary" href="/home/">Home</a>
+	</div>
 {% endblock %}

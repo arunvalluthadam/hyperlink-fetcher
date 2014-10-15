@@ -1,3 +1,9 @@
-/*body {
-	background-color: yellow;
-}*/
+body {
+	background-color: #CCCCFF;  /*#C0C0C0;*/
+}
+
+#home {
+	position: absolute;
+	top: 200px;
+	left: 500px;
+}
